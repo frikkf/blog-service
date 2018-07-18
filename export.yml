@@ -9,6 +9,6 @@ services:
   blog:
     image: frifos/blog-service:latest
     ports:
-    - 4000:3000
+      - 4000:3000
     depends_on:
       - mongodb
