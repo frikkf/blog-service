@@ -6,9 +6,3 @@ services:
       - MONGODB_DATABASE="test"
     ports:
       - 27017:27017
-  blog:
-    image: frifos/blog-service:latest
-    ports:
-      - 4000:3000
-    depends_on:
-      - mongodb # Wait for mongo-service to be started before starting this container
