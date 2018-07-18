@@ -22,6 +22,7 @@ export class BlogPostService {
     blogPost.title = createBlogPostDto.title;
     blogPost.body = createBlogPostDto.body;
     blogPost.isPublished = createBlogPostDto.isPublished;
+    blogPost.author = createBlogPostDto.author;
     return from(blogPost.save())
   }
 }

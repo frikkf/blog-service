@@ -9,4 +9,10 @@ export class BlogPost extends BaseEntity {
   @Column('text') body: string;
 
   @Column() isPublished: boolean;
+
+  @Column() createdAt: Date = new Date();
+
+  @Column() changedAt: Date = new Date();
+
+  @Column() author: string;
 }

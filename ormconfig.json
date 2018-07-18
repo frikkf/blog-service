@@ -1,6 +1,6 @@
 {
   "type": "mongodb",
-  "host": "mongodb",
+  "host": "localhost",
   "database": "test",
   "entities": ["src/**/**.entity{.ts,.js}"],
   "synchronize": true
